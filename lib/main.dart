@@ -1,6 +1,8 @@
 import 'package:dialog_flowtter/dialog_flowtter.dart';
 import 'package:flutter/material.dart';
 
+import 'Messages.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -45,6 +47,31 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('DBChatBot'),
+      ),
+      body: Container(
+        child: Column(
+          children: [
+            Expanded(child: Messages(messages: messages)),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              color: Colors.purpleAccent,
+              child: Row(
+                children: [
+                  Expanded(
+                      child: TextField(
+                    controller: _controller,
+                    style: TextStyle(color: Colors.white),
+                  )),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.send))
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

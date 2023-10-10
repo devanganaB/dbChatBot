@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        brightness: Brightness.light,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurpleAccent),
         useMaterial3: true,
       ),
-      home: const Text('Flutter Demo Home Page'),
+      home: Home(),
     );
   }
 }
@@ -54,10 +54,10 @@ class _HomeState extends State<Home> {
       body: Container(
         child: Column(
           children: [
-            Expanded(child: Messages(messages: messages)),
+            Expanded(child: MessagesScreen(messages: messages)),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-              color: Colors.purpleAccent,
+              color: Colors.deepPurpleAccent,
               child: Row(
                 children: [
                   Expanded(
@@ -73,5 +73,19 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
+  }
+
+  sendMessage(String text) async {
+    if (text.isEmpty) {
+      print('Message is Empty');
+    } else {
+      setState(() {
+        addMessage(Message(text: DialogText(text: [text])), true);
+      });
+    }
+  }
+
+  addMessage(Message message, [bool isUserMessage = false]) {
+    messages.add({'message': message, 'isUserMessage': isUserMessage});
   }
 }

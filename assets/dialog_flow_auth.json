@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "testbotflutter-9xxb",
+  "private_key_id": "c456a0fde363265123dc4b2b3523561cc0e5fb83",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCx/48VgdYjOaVj\nhq882gAQ1X93sBGZr8TtG8+O6n9WtxumE8303YHVZhlTI1ZCybHPhns4az3RStsx\nut/BB9i4KAq2dbw9j9seb74qzzQJf0QPRjR27yZqLZNZFDW/JggIYRbV/F0ipZ8d\nViT+dyQIIy1lNOiiWlfG9faJxL0ie7dDvxbKfLWHNabbPdw0d6+b8MUS8jVTv4wa\n6cXQiYfGzAh+/PJAVuWCFIor62SigccEGdbx183Rktol184xeWnvBgCd4rdTA+Fv\nXdLy3ah4rkCfsf0ygkMCoUgMXa2OUIHUumnSsWy1FBwSEFPgdCJ0VKVeyCcab6ee\nCDpnvlJRAgMBAAECggEAHIopWv1yZDt99TNHLa6WjBxvT7V/XPD91ja7VOLsf+7k\nFADg6P4LLzgrn1TvI85LIEcjwqwPQVuLQbIA5mZnrT9eWFsQT56dN4gbKaoHYe5x\n7zEGgHtf4W5lTccbxwZGC3Hlw3GvTTrZBE8np1VbBaL+SFfvZPivUktluDk/SiPf\ngcNqXfBPHEmh2gybeuyKX36BTSIpFTaWSRuzcI8lCsEGfTdkxsiP/7aE4enm0Gwk\nh9uqkx+AfHQ3w6+Pu6UhszXGa7NX8TBGecKutgkDbxXu+SrPdu1/sw2upyTJbd3R\n3cueNRzuAgEfwsZkJUJcT5Be6VNpaFhLcxdMpj10cQKBgQDduEP6+8vsmmpzbdnc\nAXLtGveCwqZnWE1CKL/J8W2wMBUN+ogFqUc5PSc45J4p/uSGYjwWoWsf6atbHpNW\n4siOX9hvzxfJDSWwKYYagHqEXLfLDRaRoYE0NsplpVYoV+J+GJukvMIp8iXowpH3\nUbxnd/IduAaxxWgjhk51+SLUMwKBgQDNhMh6+4yz9XLcBdbbRv7IpGyFwe93RHG3\nY6Tzre5kQnfNDSHyMGoJ0GnX8XptjHJZ+BqyBMDJrhl7hcX9nLoVJMaegyD8x6pb\nhC6iTuwejVxXYp5UCepir9Zz+NPbruVMovEp1KoXz+mTyb2JAMUj5GVLrbco1xVC\n6fRwMrjbawKBgQDSlSGT7rUHWr4CNfJ2X7Xs9vDf88oiW569WICX58MbVP+aUDoC\nzn1EIw3unkyObHZWIFUb1WIuZDwJBihAnJKJjwS9ZP8dSGxkPXwODbrPnlQ9+YdW\n+AMEOYnQMtF67cXDp9GkDFeJiWByCuKh+LKtvyFpEpDhJTI8k2JP8DkhOwKBgHjf\nvM3gPwvks25GnOyQ3+8ADbfJrV7XSY6Ts4OCa7BaC331WF7KLMOi6W2RX/EoZmUV\n8BV9iCnWFLS6pA0abbNb0tmNxAwIHuD+aDMb+fGqMIJQxVAmGM18H8RLt8cAIWqm\ndvKkWnnw1a8PO0NlyYznmtAc1pnVjnKxiQuoOWMLAoGBAMMye2hvjeWsujIZMwFE\nBlZauiKqUFFeIYHZFSFpowClqk4AGlM5C7awJsogm5EtB9m9WrYGEQCv4rDn1wBA\nvqlbsSwHhFt50dkQkwDbMPMNC2kpU4h9GaxddzZJ4Pbrn7288yBQ06Zaz0eOCkKG\n0aOWVINsIdd5vshIdsIBIUNg\n-----END PRIVATE KEY-----\n",
+  "client_email": "dbtestbot@testbotflutter-9xxb.iam.gserviceaccount.com",
+  "client_id": "109060169030746584637",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dbtestbot%40testbotflutter-9xxb.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

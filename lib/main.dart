@@ -34,14 +34,14 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  late DialogFlowtter _dialogFlowtter;
+  late DialogFlowtter dialogFlowtter;
   final TextEditingController _controller = TextEditingController();
 
   List<Map<String, dynamic>> messages = [];
 
   @override
   void initState() {
-    DialogFlowtter.fromFile().then((instance) => _dialogFlowtter = instance);
+    DialogFlowtter.fromFile().then((instance) => dialogFlowtter = instance);
     super.initState();
   }
 
@@ -65,7 +65,12 @@ class _HomeState extends State<Home> {
                     controller: _controller,
                     style: TextStyle(color: Colors.white),
                   )),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.send))
+                  IconButton(
+                      onPressed: () {
+                        sendMessage(_controller.text);
+                        _controller.clear();
+                      },
+                      icon: Icon(Icons.send))
                 ],
               ),
             )
@@ -81,6 +86,14 @@ class _HomeState extends State<Home> {
     } else {
       setState(() {
         addMessage(Message(text: DialogText(text: [text])), true);
+      });
+      DetectIntentResponse response = await dialogFlowtter.detectIntent(
+          queryInput: QueryInput(text: TextInput(text: text)));
+
+      if (response.message == null) return;
+
+      setState(() {
+        addMessage(response.message!);
       });
     }
   }
